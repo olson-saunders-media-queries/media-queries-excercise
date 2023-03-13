@@ -45,10 +45,43 @@ h2 {
 
 
 footer{
-    position: absolute;
+    position: relative;
     bottom: 10px;
 }
 
-@media(min-width: 590) {
 
+@media(min-width: 400px){
+    ul{
+        display: flex;
+        flex-direction: row;
+        float: right;
+        /*padding: 0;*/
+        /*margin: 0;*/
+    }
+
+    h1{
+        display: flex;
+        justify-content: flex-start;
+        /*padding: 0;*/
+        /*margin: 0;*/
+        float: left;
+    }
+
+    .alert-info{
+        display: none;
+    }
+    li {
+        background-color: white;
+    }
+    .main{
+        float:left;
+        width:60%;
+    }
+    footer {
+        clear: both;
+        margin-top: 500px;
+    }
+    #social-media-links{
+        float:right;
+    }
 }
